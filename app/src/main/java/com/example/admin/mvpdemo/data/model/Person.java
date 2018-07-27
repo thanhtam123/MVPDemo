@@ -1,4 +1,4 @@
-package com.example.admin.mvpdemo;
+package com.example.admin.mvpdemo.data.model;
 
 /**
  * Created by TamTT on 7/27/2018.

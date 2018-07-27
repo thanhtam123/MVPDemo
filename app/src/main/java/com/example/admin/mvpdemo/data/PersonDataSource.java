@@ -1,6 +1,6 @@
 package com.example.admin.mvpdemo.data;
 
-import com.example.admin.mvpdemo.Person;
+import com.example.admin.mvpdemo.data.model.Person;
 
 import java.util.ArrayList;
 

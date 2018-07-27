@@ -1,4 +1,4 @@
-package com.example.admin.mvpdemo;
+package com.example.admin.mvpdemo.screen.main;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -7,9 +7,12 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.admin.mvpdemo.R;
+import com.example.admin.mvpdemo.data.model.Person;
+
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity implements PersonAdressContract.View{
+public class MainActivity extends AppCompatActivity implements PersonAdressContract.View {
 
     private RecyclerView rvPeople;
     private RecyclerViewAdapter mRcvAdapter;

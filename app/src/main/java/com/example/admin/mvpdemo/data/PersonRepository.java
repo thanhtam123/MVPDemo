@@ -1,6 +1,7 @@
 package com.example.admin.mvpdemo.data;
 
-import com.example.admin.mvpdemo.Person;
+import com.example.admin.mvpdemo.data.model.Person;
+import com.example.admin.mvpdemo.data.resource.local.PersonLocalDataSource;
 
 import java.util.ArrayList;
 
@@ -9,13 +10,14 @@ import java.util.ArrayList;
  */
 
 public class PersonRepository implements PersonDataSource{
+    private PersonDataSource personDataSource;
+    /*
+    * Thao tác chung với local & remote réource
+    * */
 
     @Override
     public ArrayList<Person> getAllPeople() {
-        ArrayList<Person> arrayPerson = new ArrayList<>();
-        for(int i=0; i<20; i++){
-            arrayPerson.add(new Person("Framgia"+i,"Hanoi"+i));
-        }
-        return arrayPerson;
+        personDataSource = new PersonLocalDataSource();
+        return personDataSource.getAllPeople();
     }
 }
